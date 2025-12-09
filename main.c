@@ -18,7 +18,7 @@ void print_matrix(Matrix* matrix) {
   puts("");
 }
 
-int main(){
+int main() {
   Matrix* matrix1 = matrix_create(2, 2);
   matrix_set_val(matrix1, 0, 0, 1);
   matrix_set_val(matrix1, 0, 1, 2);
