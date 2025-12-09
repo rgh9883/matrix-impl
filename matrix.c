@@ -53,7 +53,7 @@ Matrix* matrix_mult(Matrix* matrix1, Matrix* matrix2) {
     for(size_t j = 0; j < col2; j++) {
       int val = 0;
       for(size_t k = 0; k < col1; k++) {
-        val += matrix1->data[(i*col1)+k] * matrix2->data[(k*col2)+i];
+        val += matrix1->data[(i*col1)+k] * matrix2->data[(k*col2)+j];
       }
       result->data[(i*col2)+j] = val;
     }
